@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="images/logo.png" class="logo" alt="Company Logo">
+        </a>
+        <div>
+            <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            <li><a href="#" id="close"><i class="far fa-times"></i></a></li> 
+          </ul>
+
+        </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+   <section id="page-header" class="about-header">
+        <h2>#Cart</h2>
+        <p>Your Game, Our Top Priority</p>
+   </section>
+
+   <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Remove</th>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="images/products/p1.jpg" alt="Product Image"></td>
+          <td>CSK Jersey - Dhoni #7</td>
+          <td>$49</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$49</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="images/products/p2.jpg" alt="Product Image"></td>
+          <td>CSK Jersey - Dhoni #7</td>
+          <td>$49</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$49</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="images/products/p3.jpg" alt="Product Image"></td>
+          <td>CSK Jersey - Dhoni #7</td>
+          <td>$49</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$49</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="images/products/p4.jpeg" alt="Product Image"></td>
+          <td>CSK Jersey - Dhoni #7</td>
+          <td>$49</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$49</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Your Coupon">
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$ 355</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+           <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$355</strong></td>
+          </tr>
+        </table>
+        <div style="text-align: right; padding: 20px;">
+          <button onclick="proceedToCheckout()" class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+        <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        
+        <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+        <img src="images/app.jpg" alt="App Store">
+        <img src="images/play.jpg" alt="Google Play">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="images/pay.png" alt="Payment Methods">
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 SportsGear | All rights reserved.</p>
+    </div>
+    </footer>
+
+
+    <div id="popup">Done</div>
+
+
+    <script>
+      const bar = document.getElementById('bar');
+      const close = document.getElementById('close');
+      const nav = document.getElementById('navbar');
+
+      if (bar) {
+        bar.addEventListener('click', () => {
+          nav.classList.add('active');
+        });
+      }
+
+      if (close) {
+        close.addEventListener('click', () => {
+          nav.classList.remove('active');
+        });
+      }
+      
+      const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartTableBody = document.querySelector("#cart table tbody");
+
+      function renderCart() {
+        cartTableBody.innerHTML = "";
+        let total = 0;
+
+        cartItems.forEach(item => {
+          const subtotal = item.price * item.quantity;
+          total += subtotal;
+
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td><a href="#" onclick="removeItem('${item.name}')">❌</a></td>
+            <td><img src="${item.img}" width="60"></td>
+            <td>${item.name}</td>
+            <td>$${item.price}</td>
+            <td><input type="number" value="${item.quantity}" min="1" onchange="updateQty('${item.name}', this.value)"></td>
+            <td>$${subtotal.toFixed(2)}</td>
+          `;
+          cartTableBody.appendChild(row);
+        });
+
+        document.querySelector("#subtotal table").innerHTML = `
+          <tr><td>Subtotal</td><td>$${total.toFixed(2)}</td></tr>
+          <tr><td>Shipping</td><td>$5.00</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>$${(total + 5).toFixed(2)}</strong></td></tr>
+        `;
+      }
+
+      function updateQty(name, qty) {
+        const item = cartItems.find(p => p.name === name);
+        if (item) {
+          item.quantity = parseInt(qty);
+          localStorage.setItem("cart", JSON.stringify(cartItems));
+          renderCart();
+        }
+      }
+
+      function removeItem(name) {
+        const index = cartItems.findIndex(p => p.name === name);
+        if (index > -1) {
+          cartItems.splice(index, 1);
+          localStorage.setItem("cart", JSON.stringify(cartItems));
+          renderCart();
+        }
+      }
+
+      function showPopup(message) {
+        const popup = document.getElementById("popup");
+        popup.textContent = message;
+        popup.classList.add("show");
+
+        setTimeout(() => {
+          popup.classList.remove("show");
+        }, 1500);
+      }
+
+      
+      function proceedToCheckout() {
+          if (cartItems.length === 0) {
+            showPopup("Your cart is empty!");
+            return;
+          }
+          showPopup("Proceeding to Order Page...");
+          setTimeout(() => {
+            location.href = "order-confirmation.html"; // ✅ Do NOT delete cart here!
+          }, 1500);
+        }
+
+      renderCart();
+</script>
+
+</body>
+</html>
